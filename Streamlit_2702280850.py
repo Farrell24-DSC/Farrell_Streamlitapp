@@ -87,13 +87,15 @@ input_data = {
 # In[11]:
 
 
-if st.button('Predict'):
+if st.button('Predict for Booking 1'):
     result = predictor.predict(input_data)
-    st.write(f"Prediction: {result}")
+    st.write(f"Prediction for Booking 1: {result}")
 
 
 # In[ ]:
 
-
+if st.button("Predict for Booking 2"):
+    result_2 = predictor.predict(input_data)
+    st.write(f"Prediction for Booking 2: {result_2}")
 
 
