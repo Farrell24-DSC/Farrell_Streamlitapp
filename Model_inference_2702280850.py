@@ -13,7 +13,7 @@ import pandas as pd
 
 
 class HotelModelPredictor:
-    def __init__(self, model_path="UTS_Model/best_model.pkl"):
+    def __init__(self, model_path="best_model.pkl"):
         with open(model_path, "rb") as f:
             self.model = pickle.load(f)
 
